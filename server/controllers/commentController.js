@@ -33,11 +33,6 @@ commentController.post = (req, res) => {
                 message: err,
             });
         })
-
-        res.status(200).json({
-            success: true,
-            data: newComment,
-        });
     }).catch((err) => {
         res.status(500).json({
             message: err,
